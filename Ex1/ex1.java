@@ -16,8 +16,7 @@ public class QSTLinkList
 	}
 	private static void printLinkList(Node head) {
 		Stack<Node> stack = new Stack<Node>();  
-		Node node = head;  
-		int i = 0;  
+		Node node = head;   
 		while(head != null){  
 			stack.push(head);  
 			head = head.next;  
