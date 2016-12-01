@@ -15,6 +15,22 @@ public class QSTLinkList
 		}
 	}
 	private static void printLinkList(Node head) {
+		Stack<Node> stack = new Stack<Node>();  
+		Node node = head;  
+		int i = 0;  
+		while(head != null){  
+			stack.push(head);  
+			head = head.next;  
+		}  
+
+		while(!stack.isEmpty()){  
+			node = stack.pop(); 
+			if(node.next!=null){
+				System.out.print(node.value); 
+				System.out.print("->");
+			}
+
+		}
 	}
   
   public static void main( String[] args ){
